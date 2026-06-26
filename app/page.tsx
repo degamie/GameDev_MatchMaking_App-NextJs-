@@ -1,13 +1,15 @@
-//WID(25/6/2026)(Sarthak Mittal(DegamieSign)(LoginPage))
+//WID(25/6/2026)(Sarthak Mittal(DegamieSign)(LoginPage #Implementation))
 "use client";
 import Image from "next/image";
 import GameCreate from "./GameCreate";
-
+import ChatComponent from "./components/ChatComponent";
+import { userClient } from "./hooks/userClient";
 import { loginUser } from "@/lib/serverfunctions";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { toast } from "sonner";
 import Link from "next/link";
+
 export default function Login() {
   const router=useRouter();
   const[btnClicked,setbtnClicked]=useState<boolean>(false);
@@ -40,6 +42,7 @@ export default function Login() {
 				<label htmlFor='email' className='mb-2 opacity-60'>
 					Email Address
 				</label>
+        <ChatComponent user={userClient}></ChatComponent>
 				<input
 					required
 					type='email'
@@ -67,7 +70,7 @@ export default function Login() {
 					{btnClicked ? "Signing in" : "Sign in"}
 				</button>
 				<p className=' opacity-60 text-center'>
-					Don&apos;t have an account?{" "}
+					Does User&apos;t has an account?{" "}
 					<Link href='/register' className='text-blue-800'>
 						Create one
 					</Link>
