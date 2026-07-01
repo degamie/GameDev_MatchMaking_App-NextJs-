@@ -1,7 +1,8 @@
-//WID(01/07/2026)(Sarthak Mittal(DegamieSign(GamesNav)))#1
+//WID(01/07/2026)(Sarthak Mittal(DegamieSign(GamesNav)))#1.1
 import React from 'react'
 import Link from "next/link";
 export default async  function GamesNav() {
+  const [navigation,setnavigation]=useState(0);
   const [navid,setnavid]=useRef(true);
   const gameapp=await getPublishGameList();
   return (
