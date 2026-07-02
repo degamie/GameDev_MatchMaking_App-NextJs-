@@ -1,6 +1,6 @@
-//WID(28/6/2026)(Sarthak Mittal(DegamieSign)(GamePageProps))
+//WID(02/7/2026)(Sarthak Mittal(DegamieSign)(GamePageProps))#1
 "use-client"
-import React from 'react'
+import React, { useState } from 'react'
 import { Suspense } from 'react';
 import StreamGridSkeleton from '../../StreamGridSkeleton';
 import LiveStreamsList from '../../LiveStreamsList';
@@ -10,6 +10,8 @@ interface GamePageprops{
      params:Promise<{gameslug:string}>;
 }
 export default  async function GameSlug({params}: { params: Promise<{ gameSlug: string }> }) { 
+  const[gameid,setgameid]=useState(0);
+  const [gameSlug,setgameslug]=useState(1);
   const {gameSlug}=await params;
 return (
     <div>
