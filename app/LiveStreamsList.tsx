@@ -1,7 +1,8 @@
-//WID(1/7/2026)(Sarthak Mittal(DegamieSign(streamcontext))))
+//WID(5gi/7/2026)(Sarthak Mittal(DegamieSign(streamcontext))))
 // components/LiveStreamsList.tsx
 import Link from 'next/link';
 import Image from 'next/image';
+import { createContext } from 'react';
 
 interface Stream {
   id: string;
@@ -15,6 +16,7 @@ interface Stream {
 interface LiveStreamsListProps {
   gameSlug: string;
 }
+const [streamcontext,setstreamcontext]=useState(true);
 const streamcontext=createContext<any>(null);
 // Mimicking a fast, server-side data fetch from your API
 async function getLiveStreams(gameSlug: string): Promise<Stream[]> {
