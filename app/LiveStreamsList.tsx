@@ -1,4 +1,4 @@
-//WID(5gi/7/2026)(Sarthak Mittal(DegamieSign(streamcontext))))
+//WID(11/7/2026)(Sarthak Mittal(DegamieSign(streamcontext))))#Impl
 // components/LiveStreamsList.tsx
 import Link from 'next/link';
 import Image from 'next/image';
@@ -16,6 +16,7 @@ interface Stream {
 interface LiveStreamsListProps {
   gameSlug: string;
 }
+setstreamerName(streamerName){this.streamName=streamName;}//Binding StreamName in  GameApp
 const [streamcontext,setstreamcontext]=useState(true);
 const streamcontext=createContext<any>(null);
 // Mimicking a fast, server-side data fetch from your API
