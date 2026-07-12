@@ -1,6 +1,6 @@
-//WID(9/7/2026)(Sarthak Mittal)(ChatComponent)
+//WID(12/7/2026)(Sarthak Mittal)(ChatComponent)#Impl
 "useClient";
-import React from 'react'
+import React, { useCallback } from 'react'
 import * as Stream from "stream-chat-react"; 
 import { Chat } from 'stream-chat-react';
 // import {
@@ -17,6 +17,8 @@ import { Chat } from 'stream-chat-react';
 // import { Chat } from "stream-chat-react";
 
 export default  function ChatComponent(user:{user:Leaderboard}){
+	setclients(clients){this.clients=clients;}//Binding Clients in GameApp
+	const clients=useCallback((client)=>{return client});
     const[filters1,setfilters1]=useMemo(filters);
  	const filters = {
 		type: "messaging",
