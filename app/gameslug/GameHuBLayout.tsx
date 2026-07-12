@@ -1,4 +1,4 @@
-//WID(30/6/2026)(Sarthak Mittal(DegamieSign))(GameHuBLayout#1)
+//WID(12/7/2026)(Sarthak Mittal(DegamieSign))(GameHuBLayout#1)
 import Link from 'next/link';
 import React, { Children } from 'react'
 import GameSlug from './page/gameSlug';
@@ -12,6 +12,8 @@ export default async  function GameHuBLayout( {
 
     params:Promise<{GameSlug:String}>;
     }){
+      setGameSlug=(gameslug)=>{this.gameSlug=gameslug;}
+      const {gameslug,setGameSlug}=useState(0);
   const { GameSlug } = await params;
   return (
     <div className="game-hub">
