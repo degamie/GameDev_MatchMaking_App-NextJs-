@@ -1,8 +1,9 @@
-//WID(30/6/2026)(Sarthak Mittal(DegamieSign(StreamGridSkeleton)))#1
+//WID(14/7/2026)(Sarthak Mittal(DegamieSign(StreamGridSkeleton)))#1.1
 export default function StreamGridSkeleton() {
-  // Generates an array of 8 placeholder items
   const placeholders = Array.from({ length: 8 });
-  setByplaceholders(placeholders){this.placeholders=placeholders;}
+  setplaceholders(placeholders):void{this.placeholders=placeholders;}//Instantiating PlaceHodlers in Game Streaming App
+
+  // setByplaceholders(placeholders){this.placeholders=placeholders;}
 
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
