@@ -1,7 +1,10 @@
+import { useState } from "react";
+
 //WID(14/7/2026)(Sarthak Mittal(DegamieSign(StreamGridSkeleton)))#1.1
 export default function StreamGridSkeleton() {
-  const placeholders = Array.from({ length: 8 });
-  setplaceholders(placeholders):void{this.placeholders=placeholders;}//Instantiating PlaceHodlers in Game Streaming App
+  const [placeholders, setPlaceholders] = useState(() => Array.from({ length: 8 }));
+  // const placeholders = Array.from({ length: 8 });
+  // setplaceholders(placeholders):void{this.placeholders=placeholders;}//Instantiating PlaceHodlers in Game Streaming App
 
   // setByplaceholders(placeholders){this.placeholders=placeholders;}
 
