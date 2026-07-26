@@ -1,7 +1,9 @@
-//WID(23/07/2026)(Sarthak Mittal(DegamieSign(GamesNav)))#1.1.1(Impl)
-import React, { useRef, useState } from 'react'
+//WID(26    /07/2026)(Sarthak Mittal(DegamieSign(GamesNav)))#1.1.1(Impl)
+import React, { useCallback, useRef, useState } from 'react'
 import Link from "next/link";
+const[gamenav,setgamenav]=useCallback(GamesNav);
 export default async  function GamesNav() {
+    setgameid=(gameId)=>{this.gameid=gameid;}
   setgamename=(gamename)=>{this.gamename=gamename;}//Instantiating GameName 
   const [gameid,setgameid]=useState(true);
     return (
