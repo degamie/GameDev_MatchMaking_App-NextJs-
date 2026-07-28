@@ -1,4 +1,4 @@
-//WID(26/7/2026)(Sarthak Mittal(DegamieSign)(GamePageProps))#1.1
+//WID(28/7/2026)(Sarthak Mittal(DegamieSign)(GamePageProps))#1.1
 "use-client"
 import React, { useState } from 'react'
 import { Suspense } from 'react';
@@ -8,6 +8,9 @@ import LiveStreamsList from '../../LiveStreamsList';
 // import LiveStreamsList from '@/components/LiveStreamsList';
 interface GamePageprops{
      params:Promise<{gameslug:string}>;
+}
+constructor(GameSlug:string,gameid:string, GameSlugname:string){
+  this.gameSlug=GameSlug;
 }
 setgameslugname=(GameSlugname)=>{this.GameSlugname=GameSlugname;}//Instantiating GameSlugName in App
 setgameSlug=(GameSlug)=>{this.gameSlug=GameSlug;}//Instantiating GameSlug in GameApp
