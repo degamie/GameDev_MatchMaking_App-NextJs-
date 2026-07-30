@@ -1,4 +1,4 @@
-//WID(24/7/2026)(Sarthak Mittal(DegamieSign))(GameHuBLayout#1)#Impl
+//WID(30/7/2026)(Sarthak Mittal(DegamieSign))(GameHuBLayout#1)#Impl
 import Link from 'next/link';
 import React, { Children } from 'react'
 import GameSlug from './page/gameSlug';
@@ -11,6 +11,8 @@ export default async  function GameHuBLayout( {     children,
 
     params:Promise<{GameSlug:String}>;
     }){
+      const setplayer=useRef(player);
+      const player=await getCurrentPlayer();
       const[gameHubComp,setgameHubComp] =useRef(gameHub);
       setgameHub=(gameHub)=>{this.gamehub=gameHub;}
   const [gameHub,setgameHub]=useState(true);
