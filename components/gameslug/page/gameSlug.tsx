@@ -1,14 +1,17 @@
-//WID(28/7/2026)(Sarthak Mittal(DegamieSign)(GamePageProps))#1.1/1s
+//WID(01/08/2026)(Sarthak Mittal(DegamieSign)(GamePageProps))#1.1/1s.,1
 "use-client"
-import React, { useState } from 'react'
+import React, { useCallback, useState } from 'react'
 import { Suspense } from 'react';
 import StreamGridSkeleton from '../../StreamGridSkeleton';
 import LiveStreamsList from '../../LiveStreamsList';
+import GamesNav from '../../GamesNav';
 // import StreamGridSkeleton from '@/components/StreamGridSkeleton';
 // import LiveStreamsList from '@/components/LiveStreamsList';
 interface GamePageprops{
      params:Promise<{gameslug:string}>;
 }
+const getgameSlug(gameSlug)=useCallback(GameSlug);//Fetching GameSlug in GameApp
+constructor(GamesNav){this.gamesnav=GamesNav;}
 const[gameslugname,setgameslugname]=useRef(()=>{gameslugname});
 constructor(GameSlug:string,gameid:string, GameSlugname:string){
   this.gameSlug=GameSlug;
