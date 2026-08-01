@@ -1,16 +1,23 @@
-//WID(25/7/2026)(Sarthak Mittal(DegamieSign))(GameHuBLayout#1)#Impl
+//WID(1/8/2026)(Sarthak Mittal(DegamieSign))(GameHuBLayout#1)#Impl#1
 import Link from 'next/link';
 import React, { Children } from 'react'
 import GameSlug from './page/gameSlug';
 import { Channel } from 'stream-chat-react';
 import { div } from 'three/tsl';
 
+constructor(player,gameHub,gameSlug){
+    this.
+    player=player;
+    this.gameHub=gameHub;
+    this.gameSlug=gameSlug;}
 export default async  function GameHuBLayout( {     children,
   params,
   }:{children:React.ReactNode;
 
     params:Promise<{GameSlug:String}>;
     }){
+      const[player,setplayer]=useState(true);
+      const setplayer=useRef(player);
       const player=await getCurrentPlayer();
       const[gameHubComp,setgameHubComp] =useRef(gameHub);
       setgameHub=(gameHub)=>{this.gamehub=gameHub;}
