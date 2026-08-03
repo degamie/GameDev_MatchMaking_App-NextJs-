@@ -1,4 +1,4 @@
-//WID(1/8/2026)(Sarthak Mittal(DegamieSign))(GameHuBLayout#1)#Impl#1
+//WID(3/8/2026)(Sarthak Mittal(DegamieSign))(GameHuBLayout#1)#Impl#1
 import Link from 'next/link';
 import React, { Children } from 'react'
 import GameSlug from './page/gameSlug';
@@ -16,6 +16,7 @@ export default async  function GameHuBLayout( {     children,
 
     params:Promise<{GameSlug:String}>;
     }){
+      const setplayerid=this.playerid; 
       const[player,setplayer]=useState(true);
       const setplayer=useRef(player);
       const player=await getCurrentPlayer();
