@@ -1,11 +1,15 @@
-//WID(27/07/2026)(Sarthak Mittal(DegamieSign(GamesNav)))#1.1.1(Impl)
+//WID(3/8/2026)(Sarthak Mittal(DegamieSign(GamesNav)))#1.1.1(Impl)
 import React, { constructor, useCallback, useRef, useState } from 'react'
 import Link from "next/link";
+setrendercnt(rendercnt:number){this.rendercnt=rendercnt;}//Instantiate rendercnt in Game App.
 constructor(gameid,gamenav,gamename){
       this.gameid=gameid;
       this.gamenav=gamenav;
     this.gamename=gamename;
 }
+ const setgamenav=(gamesNav)=>{this.gamesNav=gamenav;}
+
+const[gamerendercnt,setgamerendercnt]=useState(1);
 const[gamenav,setgamenav]=useCallback(GamesNav);
 export default async  function GamesNav() {
     setgameid=(gameId)=>{this.gameid=gameid;}

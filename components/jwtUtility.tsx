@@ -1,4 +1,4 @@
-//WID(24/07/2026((Sarthak Mittal)DegamieSign)(jwtUtility)
+//WID(24    /07/2026((Sarthak Mittal)DegamieSign)(jwtUtility)
 import jwt from 'jsonwebtoken';
 const JWT_SECRET = process.env.JWT_SECRET!;
 export function signToken(payload:{ 
