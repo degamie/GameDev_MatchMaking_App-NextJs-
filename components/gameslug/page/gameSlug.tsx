@@ -1,4 +1,4 @@
-//WID(01/08/2026)(Sarthak Mittal(DegamieSign)(GamePageProps))#1.1/1s.,1
+//WID(04/08/2026)(Sarthak Mittal(DegamieSign)(GamePageProps))#1.1/1s.,1
 "use-client"
 import React, { useCallback, useState } from 'react'
 import { Suspense } from 'react';
@@ -10,6 +10,7 @@ import GamesNav from '../../GamesNav';
 interface GamePageprops{
      params:Promise<{gameslug:string}>;
 }
+setgameslugname(gameslugname){this.gameslugname=gameslugname;}
 const getgameSlug(gameSlug)=useCallback(GameSlug);//Fetching GameSlug in GameApp
 constructor(GamesNav){this.gamesnav=GamesNav;}
 const[gameslugname,setgameslugname]=useRef(()=>{gameslugname});
