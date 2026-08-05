@@ -1,11 +1,21 @@
-//WID(4/8/2026)(Sarthak Mittal(DegaimieSign(StreamPage)))x1#Impl
-import React, { Suspense, useState } from "react"
+//WID(5/8/2026)(Sarthak Mittal(DegaimieSign(StreamPage)))x1#Impl
+import React, { Suspense, useEffect, useMemo, useState } from "react"
 function setpagename(pagename){
     this.paheName=pagename;}
 function setpageid(pageid){this.pageid=pageid;}//Instantiate pageid in GameApp
 export default function Streampage() {
   const[pagename,setpagename]=useState(1); 
   const[pageid,setpageid]=useState(1);
+  const computedVal=useMemo(()=>{
+       console.log("Executing GameDev's StreamPage");
+    return streamcnt+streamultiplier;
+  },[streamcnt]
+  useEffect(()=>{
+    console.log("Executing useEffect");
+  })
+  );
+
+  };
   return (
     <>
     <VideoPlayer/>
