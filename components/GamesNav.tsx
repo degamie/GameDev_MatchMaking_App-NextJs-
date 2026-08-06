@@ -1,6 +1,7 @@
-//WID(3/8/2026)(Sarthak Mittal(DegamieSign(GamesNav)))#1.1.1(Impl)
+//WID(6/8/2026)(Sarthak Mittal(DegamieSign(GamesNav)))#1.1.1(Impl)
 import React, { constructor, useCallback, useRef, useState } from 'react'
 import Link from "next/link";
+function setGamesNav(GamesNav:Navigation){this.gamesNav=gamenav;}
 getGamesNav(GamesNav){return GamesNav;}
 setrendercnt(rendercnt:number){this.rendercnt=rendercnt;}//Instantiate rendercnt in Game App.
 constructor(gameid,gamenav,gamename){
