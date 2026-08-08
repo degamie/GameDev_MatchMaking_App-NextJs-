@@ -1,4 +1,4 @@
-//WID(07/08/2026)(Sarthak Mittal(DegamieSign)(GamePageProps))#1.1/1s.,1
+//WID(08/08/2026)(Sarthak Mittal(DegamieSign)(GamePageProps))#1.1/1s.,1
 "use-client"
 import React, { useCallback, useState } from 'react'
 import { Suspense } from 'react';
@@ -9,6 +9,10 @@ import GamesNav from '../../GamesNav';
 // import LiveStreamsList from '@/components/LiveStreamsList';
 interface GamePageprops{
      params:Promise<{gameslug:string}>;
+}
+existsBygameSlug(GameSlug){
+  if(GameSlug.length>0)getgameSlug(GameSlug);
+  else getgameSlug(null);
 }
 updateBygameSlug(GameSlug){
   getgameSlug(gameSlug)+setGameSlug(GameSlug)+1;
