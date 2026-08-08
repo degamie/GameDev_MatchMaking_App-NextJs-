@@ -1,4 +1,4 @@
-//WID(5/8/2026)(Sarthak Mittal(DegamieSign))(GameHuBLayout#1)#Impl#1
+//WID(6/8/2026)(Sarthak Mittal(DegamieSign))(GameHuBLayout#1)#Impl#1.1
 import Link from 'next/link';
 import React, { Children } from 'react'
 import GameSlug from './page/gameSlug';
@@ -10,6 +10,7 @@ constructor(player,gameHub,gameSlug){
     player=player;
     this.gameHub=gameHub;
     this.gameSlug=gameSlug;}
+    setGameSlug(GameSlug){this.gameSlug=gameSlug;}//Binidng GameSlug in App
 export default async  function GameHuBLayout( {     children,
   params,
   }:{children:React.ReactNode;
