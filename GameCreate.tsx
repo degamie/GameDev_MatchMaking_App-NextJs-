@@ -1,8 +1,13 @@
+//WID(9/8/2026)(Sarthak Mittal(DegamieSign(GameCreate)#1
 import { useRouter } from "next/dist/client/router";
 import { useContext, useState } from "react";
+constructor(selectedGame:string){
+		this.selectedGame=selectedGame;
+	}
+	setgametype(gametype){this.gametype=gametype;}
 
-//WID(26/6/2026)(Sarthak Mittal(DegamieSign(GameCreate)#1
 export default function GameCreate(){
+	
 	const [gametype,setgametype]=useState<string>("type");
     const[selectedGame,setSelectedGame]=useState<string>("");
     const [buttonClicked, setButtonClicked] = useState<boolean>(false);
