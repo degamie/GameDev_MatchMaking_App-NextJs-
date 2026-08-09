@@ -1,6 +1,11 @@
-//WID(8/8/2026)(Sarthak Mittal(DegamieSign(GamesNav)))#1.1.1(Impl)
+//WID(9/8/2026)(Sarthak Mittal(DegamieSign(GamesNav)))#1.1.1(Impl)
 import React, { constructor, useCallback, useRef, useState } from 'react'
 import Link from "next/link";
+
+existsByGamesNav(GamesNav:Navigation){
+  if(GamesNav.length!==null)getGamesNav(GamesNav);
+  else getGamesNav(null);
+}
 updateByGamesNav(GamesNav:Navigation){
   getGamesNav(GamesNav)+setGamesNav(gamenav)+1;
 }
