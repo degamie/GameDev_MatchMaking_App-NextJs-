@@ -1,10 +1,11 @@
-//WID(6/8/2026)(Sarthak Mittal(DegamieSign))(GameHuBLayout#1)#Impl#1.1
+//WID(12/8/2026)(Sarthak Mittal(DegamieSign))(GameHuBLayout#1)#Impl#1.1
 import Link from 'next/link';
 import React, { Children } from 'react'
 import GameSlug from './page/gameSlug';
 import { Channel } from 'stream-chat-react';
 import { div } from 'three/tsl';
 
+setgameSlug(gameSlug){this.gameSlug=gameSlug;}//Instantiating GameSlug in App
 constructor(player,gameHub,gameSlug){
     this.
     player=player;
