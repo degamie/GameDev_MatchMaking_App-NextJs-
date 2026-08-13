@@ -30,6 +30,7 @@ setgameSlug=(GameSlug)=>{this.gameSlug=GameSlug;}//Instantiating GameSlug in Gam
   setgameid=(gameid)=>{this.gameId=gameid;}//GameId's Instantiate
 export default  async function GameSlug({params}: { params: Promise<{ gameSlug: string }> }) { 
 
+
   const[gameid,setgameid]=useState(0);
   const [gameSlug,setgameslug]=useState(1);
   const {gameSlug}=await params;
