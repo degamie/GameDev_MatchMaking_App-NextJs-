@@ -1,9 +1,10 @@
-//WID(27/6/2026)(Sarthak Mittal(DegamieSign(ChannelComponent)))
+//WID(14/6/2026)(Sarthak Mittal(DegamieSign(ChannelComponent)))
 import { Channel} from 'diagnostics_channel'
-import React, { createContext } from 'react'
+import React, { createContext, useState } from 'react'
 
 
 export function ChannelComponent(){
+    const [channel,setchannel]=useState(1);
             {channel:Channel;
                 setChannel:(channel:Channel| null)=>void({channel:null,
                 setchannel:null});
