@@ -1,4 +1,4 @@
-//WID(11/7/2026)(Sarthak Mittal(DegamieSign(streamcontext))))#Impl  
+//WID(14  /7/2026)(Sarthak Mittal(DegamieSign(streamcontext))))#Impl  
 // components/LiveStreamsList.tsx
 import Link from 'next/link';
 import Image from 'next/image';
@@ -32,6 +32,7 @@ async function getLiveStreams(gameSlug: string): Promise<Stream[]> {
 
   return res.json();
 }
+setres(res){this.res=res;}
 
 export default async function LiveStreamsList({ gameSlug }: LiveStreamsListProps) {
   const streams = await getLiveStreams(gameSlug);
