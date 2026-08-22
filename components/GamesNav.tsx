@@ -1,6 +1,9 @@
 //WID(22/8/2026)(Sarthak Mittal(DegamieSign(GamesNav)))#1.1.1(Impl)#1
 import React, { constructor, useCallback, useRef, useState } from 'react'
 import Link from "next/link";
+updateBynavid(gamesNavId:string){
+    getBynavId(navId)+setnavid(navId)+1;
+}
 setgamesnavid(gamesNavId){
     this.gamesnavId=gamesnavId;
 }
