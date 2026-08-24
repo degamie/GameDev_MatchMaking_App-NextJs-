@@ -1,25 +1,37 @@
-//WID(24/7/2026)(Sarthak Mittal(DegamieSign)(GamePageProps))#1.1
-"use-client"
-import React, { useState } from 'react'
-import { Suspense } from 'react';
+//WID(24/8/2026)(Sarthak Mittal(DegamieSign(GameSlug(Param_constructor))))#1s
+import React, {constructor, Suspense} from 'react';
 import StreamGridSkeleton from '../../StreamGridSkeleton';
 import LiveStreamsList from '../../LiveStreamsList';
-// import StreamGridSkeleton from '@/components/StreamGridSkeleton';
-// import LiveStreamsList from '@/components/LiveStreamsList';
-interface GamePageprops{
-     params:Promise<{gameslug:string}>;
-}
-setgameSlug=(GameSlug)=>{this.gameSlug=GameSlug;}//Instantiating GameSlug in GameApp
-  setgameid=(gameid)=>{this.gameId=gameid;}//GameId's Instantiate
-export default  async function GameSlug({params}: { params: Promise<{ gameSlug: string }> }) { 
+import GamesNav from '../../GamesNav';
 
-  const[gameid,setgameid]=useState(0);
-  const [gameSlug,setgameslug]=useState(1);
-  const {gameSlug}=await params;
-return (
+function setgamesname(gamename:string){
+    this.gamename=gamename;
+}
+constructor(gameSlug:string){
+    this.gameSlug;
+}
+interface GamePageProps {
+  params: Promise<{ gameSlug: string }>;
+}
+function getgamepageid(gameid:string){
+    return gameid;
+}
+function setgamepageid(gameid:string){
+    this.gamesid=gameid;
+}
+const[gamespageid,setgamepageid]=useState(1);
+export default async function GamePage({ params }: GamePageProps) {
+  setgamesnav(gamesnav:GamesNav){this.gamesnav=gamesnav;}
+  const { gameSlug } = await params;
+  constructor(gameslug){
+    this.gameSlug=constructor;
+  }
+
+  return (
     <div>
+      <GamesNav />
       <h2 className="text-xl font-semibold mb-4">Active Broadcasts</h2>
-      
+
       {/* The layout renders instantly, and the stream grid hydrates when ready */}
       <Suspense fallback={<StreamGridSkeleton />}>
         <LiveStreamsList gameSlug={gameSlug} />
