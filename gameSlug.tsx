@@ -1,18 +1,34 @@
-//WID(16/8/2026)(Sarthak Mittal(DegamieSign(GameSlug(Param_constructor))))
-import React, { Suspense } from 'react';
+//WID(26/8/2026)(Sarthak Mittal(DegamieSign(GameSlug(Param_constructor))))#1s#impl.1
+import React, {constructor, Suspense, useState} from 'react';
 import StreamGridSkeleton from '../../StreamGridSkeleton';
 import LiveStreamsList from '../../LiveStreamsList';
 import GamesNav from '../../GamesNav';
 
+function setgamerendercnt(){this.gamerendercnt=0;}
+function getrendercnt(rendercnt:number){
+    return rendercnt;
+}
+function setgamesname(gamename:string){
+    this.gamename=gamename;
+}
+constructor(gameSlug:string){
+    this.gameSlug;
+}
 interface GamePageProps {
   params: Promise<{ gameSlug: string }>;
 }
-
+function getgamepageid(gameid:string){
+    return gameid;
+}
+function setgamepageid(gameid:string){
+    this.gamesid=gameid;
+}
+const[gamespageid,setgamepageid]=useState(1);
 export default async function GamePage({ params }: GamePageProps) {
   setgamesnav(gamesnav:GamesNav){this.gamesnav=gamesnav;}
   const { gameSlug } = await params;
   constructor(gameslug){
-    this.gameSlug=constructor; 
+    this.gameSlug=constructor;
   }
 
   return (
