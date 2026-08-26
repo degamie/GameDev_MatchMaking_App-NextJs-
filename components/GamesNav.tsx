@@ -1,6 +1,27 @@
-//WID(24/8/2026)(Sarthak Mittal(DegamieSign(GamesNav)))#1.1.1(Impl)#1
+//WID(27/8/2026)(Sarthak Mittal(DegamieSign(GamesNav)))#1.1.1(Impl)#1.1.1.1
 import React, {constructor, useCallback, useMemo, useRef, useState} from 'react'
 import Link from "next/link";
+// import {throws} from "node:assert";
+updateBygamescnt(gamescnt)throw exception{
+    getgamescnt(gamescnt)+setgamescnt(gamescnt)+1;
+}
+function setgamescnt(gamescnt) {
+
+}
+
+
+
+function getgamescnt(gamescnt) {
+        return gamescnt.gamescnt;
+}
+
+{
+    getgamescnt(gamescnt)
+}
+setrendercnt(rendercnt){
+    this.rendercnt=rendercnt;
+}
+updateBygamename(gamename => {string}){this.gamename=gamename;}
 setGamename(gamename:string){
     this.gamename=gamename;
 }
