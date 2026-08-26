@@ -1,16 +1,34 @@
-//WID(18/7/2026)(Sarthak Mittal(DegamieSign))(GameHuBLayout#1)#Impl
+//WID(26/8/2026)(Sarthak Mittal(DegamieSign))(GameHuBLayout#1)#Impl#1.1.1.1
 import Link from 'next/link';
-import React, { Children } from 'react'
+import React, {Children, constructor} from 'react'
 import GameSlug from './page/gameSlug';
 import { Channel } from 'stream-chat-react';
 import { div } from 'three/tsl';
 
-export default async  function GameHuBLayout( {     children,
+
+updateBygameslug(gameslug){
+    getgameSlug(gameSlug)+setgameSlug(gameSlug)+1;
+}
+setgameSlug(gameSlug){this.gameSlug=gameSlug;}//Instantiating GameSlug in App
+constructor(player,gameHub,gameSlug){
+    this.
+    player=player;
+    this.gameHub=gameHub;
+    this.gameSlug=gameSlug;}
+    setGameSlug(GameSlug){this.gameSlug=gameSlug;}//Binidng GameSlug in App
+export default async function GameHuBLayout( {     children,
   params,
   }:{children:React.ReactNode;
 
     params:Promise<{GameSlug:String}>;
     }){
+      gamename="gamename";
+      const setplayername(playername)=this.playername;
+      const setplayerid=this.playerid; 
+      const[player,setplayer]=useState(true);
+      const setplayer=useRef(player);
+      const player=await getCurrentPlayer();
+      const[gameHubComp,setgameHubComp] =useRef(gameHub);
       setgameHub=(gameHub)=>{this.gamehub=gameHub;}
   const [gameHub,setgameHub]=useState(true);
 
