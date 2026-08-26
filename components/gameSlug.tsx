@@ -1,9 +1,18 @@
-//WID(22/8/2026)(Sarthak Mittal(DegamieSign(GameSlug(Param_constructor))))#1s
-import React, {constructor, Suspense} from 'react';
+//WID(26/8/2026)(Sarthak Mittal(DegamieSign(GameSlug(Param_constructor))))#1s#impl.1.1
+import React, {constructor, Suspense, useState} from 'react';
 import StreamGridSkeleton from '../../StreamGridSkeleton';
 import LiveStreamsList from '../../LiveStreamsList';
 import GamesNav from '../../GamesNav';
-
+function calculategamenum(gamenum:number) {
+    gamenum = Number(gamenum);
+}
+function setgamerendercnt(){this.gamerendercnt=0;}
+function getrendercnt(rendercnt:number){
+    return rendercnt;
+}
+function setgamesname(gamename:string){
+    this.gamename=gamename;
+}
 constructor(gameSlug:string){
     this.gameSlug;
 }
