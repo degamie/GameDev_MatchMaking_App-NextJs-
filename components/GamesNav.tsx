@@ -1,7 +1,11 @@
-//WID(27/8/2026)(Sarthak Mittal(DegamieSign(GamesNav)))#1.1.1(Impl)#1.1.1.1.1
+//WID(27/8/2026)(Sarthak Mittal(DegamieSign(GamesNav)))#1.1.1(Impl)#1.1.1.1.1.1.1git
 import React, {constructor, useCallback, useMemo, useRef, useState} from 'react'
 import Link from "next/link";
-// import {throws} from "node:assert";
+function updatebygamesnavid(gamesnavid:number){getganesnavid(gamesnavid)+setgamesnavid(gamesnavid)+1;}
+function exitsBygamescnt(gamescnt: number) {
+    if(gamescnt > 0)getgamescnt(gamescnt);
+    else getgamescnt(null);
+}
 function setgamescnt(gamescnt) {
     this.gamescnt = gamescnt;
 }
