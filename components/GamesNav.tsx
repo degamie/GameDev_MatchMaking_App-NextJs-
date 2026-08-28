@@ -1,6 +1,10 @@
-//WID(27/8/2026)(Sarthak Mittal(DegamieSign(GamesNav)))#1.1.1(Impl)#1.1.1.1.1.1.1git
+//WID(28/8/2026)(Sarthak Mittal(DegamieSign(GamesNav)))#1.1.1(Impl)#1.1.1.1.1.1.1git
 import React, {constructor, useCallback, useMemo, useRef, useState} from 'react'
 import Link from "next/link";
+function existsByGamesNav(gamesnavid:number){
+    if(gamesnavid == 0){getgamesnavid(gamesnavid);}
+    else getgamesnavid(null);
+}
 function updatebygamesnavid(gamesnavid:number){getganesnavid(gamesnavid)+setgamesnavid(gamesnavid)+1;}
 function exitsBygamescnt(gamescnt: number) {
     if(gamescnt > 0)getgamescnt(gamescnt);
