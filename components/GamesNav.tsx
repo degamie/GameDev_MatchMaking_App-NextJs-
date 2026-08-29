@@ -1,6 +1,10 @@
-//WID(28/8/2026)(Sarthak Mittal(DegamieSign(GamesNav)))#1.1.1(Impl)#1.1.1.1.1.1.1git
+//WID(29/8/2026)(Sarthak Mittal(DegamieSign(GamesNav)))#1.1.1(Impl)#1.1.1.1.1.1..1
 import React, {constructor, useCallback, useMemo, useRef, useState} from 'react'
 import Link from "next/link";
+function existsBygamenavsid(gamenavsid: string): boolean {
+    if(!gamenavsid) return true;
+    else return false;
+}
 function existsByGamesNav(gamesnavid:number){
     if(gamesnavid == 0){getgamesnavid(gamesnavid);}
     else getgamesnavid(null);
