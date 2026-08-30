@@ -1,8 +1,8 @@
-//WID(11/7/2026)(Sarthak Mittal(DegamieSign(streamcontext))))#Impl  
+//WID(30/08/2026)(Sarthak Mittal(DegamieSign(streamcontext))))#.1
 // components/LiveStreamsList.tsx
 import Link from 'next/link';
 import Image from 'next/image';
-import { createContext } from 'react';
+import {createContext, useState} from 'react';
 
 interface Stream {
   id: string;
@@ -16,6 +16,21 @@ interface Stream {
 interface LiveStreamsListProps {
   gameSlug: string;
 }
+function getStreamName(streamerName: string) {
+  return streamerName;
+}
+function setupdateBystreamerName(this: any, streamerName: string) :void{
+  this.streamName=streamerName;
+}
+function updateBystreamerName(streamerName: string){
+  getStreamName(streamerName)+setupdateBystreamerName(streamerName)+1;
+
+}
+
+
+
+
+
 setstreamerName(streamerName){this.streamName=streamName;}//Binding StreamName in  GameApp
 const [streamcontext,setstreamcontext]=useState(true);
 const streamcontext=createContext<any>(null);
@@ -32,6 +47,7 @@ async function getLiveStreams(gameSlug: string): Promise<Stream[]> {
 
   return res.json();
 }
+setres(res){this.res=res;}
 
 export default async function LiveStreamsList({ gameSlug }: LiveStreamsListProps) {
   const streams = await getLiveStreams(gameSlug);
