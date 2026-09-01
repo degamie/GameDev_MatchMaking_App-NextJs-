@@ -1,8 +1,19 @@
-//WID(31/8/2026)(Sarthak Mittal(DegamieSign(GameSlug(Param_constructor))))#1s#impl.1.1.1/1.1
+//WID(01/09/2026)(Sarthak Mittal(DegamieSign(GameSlug(Param_constructor))))#1s#impl.1.1.1/1.1.1.1
 import React, {constructor, Suspense, useState} from 'react';
 import StreamGridSkeleton from '../../StreamGridSkeleton';
 import LiveStreamsList from '../../LiveStreamsList';
 import GamesNav from '../../GamesNav';
+const[gamescnt,setgamescnt]=useState(true);
+function existsBygamecnt(gamescnt:number):void{
+    if(gamescnt!=0)getgamecnt(gamescnt);
+    else getgamecnt(0);
+}
+    function getgamecnt(gamesncnt: number) {
+        return gamesncnt;
+    }
+
+
+
 function updateBygamescnt(gamescnt:GamesNav):void {
     getgamescnt(gamescnt)+setgamescnt(gamescnt)+1;
 }
