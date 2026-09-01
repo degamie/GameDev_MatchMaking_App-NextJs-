@@ -1,7 +1,60 @@
-//WID(19/8/2026)(Sarthak Mittal(DegamieSign(GamesNav)))#1.1.1(Impl)#1
-import React, { constructor, useCallback, useRef, useState } from 'react'
+//WID(01/8/2026)(Sarthak Mittal(DegamieSign(GamesNav)))#1.1.1(Impl)#1.1.1.1.1.1..1/1.1.1    
+import React, {constructor, useCallback, useMemo, useRef, useState} from 'react'
 import Link from "next/link";
+function updateBygamename(gamename: string):void{
+    getgamename(gamename)+setgamename(gamename)+1;
+}
+function getgamename(gamename: string) {
+    return gamename;
+}
 
+function  setgamename(gamename:string){
+    this.gamename=gamename;
+}
+const[gamename,setgamename]=useState<string>();
+function existsBygamenavsid(gamenavsid: string): boolean {
+    if(!gamenavsid) return true;
+    else return false;
+}
+function existsByGamesNav(gamesnavid:number){
+    if(gamesnavid == 0){getgamesnavid(gamesnavid);}
+    else getgamesnavid(null);
+}
+function updatebygamesnavid(gamesnavid:number){getganesnavid(gamesnavid)+setgamesnavid(gamesnavid)+1;}
+function exitsBygamescnt(gamescnt: number) {
+    if(gamescnt > 0)getgamescnt(gamescnt);
+    else getgamescnt(null);
+}
+function setgamescnt(gamescnt) {
+    this.gamescnt = gamescnt;
+}
+updateBygamescnt(gamescnt)throw exception{
+    getgamescnt(gamescnt)+setgamescnt(gamescnt)+1;
+}
+
+
+
+
+function getgamescnt(gamescnt) {
+        return gamescnt.gamescnt;
+}
+
+{
+    getgamescnt(gamescnt)
+}
+setrendercnt(rendercnt){
+    this.rendercnt=rendercnt;
+}
+updateBygamename(gamename => {string}){this.gamename=gamename;}
+setGamename(gamename:string){
+    this.gamename=gamename;
+}
+updateBynavid(gamesNavId:string){
+    getBynavId(navId)+setnavid(navId)+1;
+}
+setgamesnavid(gamesNavId){
+    this.gamesnavId=gamesnavId;
+}
 const[gamesnavid,setgamesnavid]=useState<number>();
 function updateBygamescnt(gamecnt){
     getgamecnt(gamecnt)+setgamecnt(gamecnt)+1;
