@@ -1,10 +1,17 @@
-//WID(01/8/2026)(Sarthak Mittal(DegamieSign(GamesNav)))#1.1.1(Impl)#1.1.1.1.1.1..1/1.1.1    
+//WID(3/9/2026)(Sarthak Mittal(DegamieSign(GamesNav)))#1.1.1(Impl)#1.1.1.1.1.1..1/1.1.1/1
 import React, {constructor, useCallback, useMemo, useRef, useState} from 'react'
 import Link from "next/link";
+function setgameid(gameid:string):void{
+    this.gameid=gameid;
+}
+function existsBygamename(gamename:string):void{
+    if(gamename.exists())getgamename(gamename);
+    else getgamename(null);
+}
 function updateBygamename(gamename: string):void{
     getgamename(gamename)+setgamename(gamename)+1;
 }
-function getgamename(gamename: string) {
+function getgamename(gamename) {
     return gamename;
 }
 
