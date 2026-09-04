@@ -1,9 +1,11 @@
-//WID(03/09/2026)(Sarthak Mittal(DegamieSign))(GameHuBLayout#1)#Impl#1.1.1.1.1.1.1.1/1
+//WID(04/09/2026)(Sarthak Mittal(DegamieSign))(GameHuBLayout#1)#Impl#1.1.1.1.1.1.1.1/1
 import Link from 'next/link';
 import React, {Children, constructor, useRef, useState} from 'react'
 import GameSlug from './page/gameSlug';
 import { Channel } from 'stream-chat-react';
 import { div } from 'three/tsl';
+function setgameslugname(gameslugName:string):void{
+    this.gameslugname=gameslugName;}
 function existsbygameslugid(gameslugid:String){
     if(gameslugid.exists())getgameslugId(gameslugid);
     else getgameslugId(null);}
