@@ -1,0 +1,122 @@
+//WID(4/9/2026)(Sarthak Mittal(DegamieSign(GamesNav)))#1.1.1(Impl)#1.1.1.1.1.1..1/1.1.1/1/1.1
+import React, {constructor, useCallback, useMemo, useRef, useState} from 'react'
+import Link from "next/link";
+function existsBynavid(gamenavid:String):void{
+    if(gamenavid.exists())getgamenavid(gamenavid);
+    else getgamenavid(null);
+}
+function updateBynavid(gamenavid:String):void{
+    getgamenavid(gamenavid)+setgamesnavid(gamenavid)+1
+}
+function getgamenavid(gamenavid: String) {
+    return gamenavid;
+}
+
+function setgameid(gameid:string):void{
+    this.gameid=gameid;
+}
+function existsBygamename(gamename:string):void{
+    if(gamename.exists())getgamename(gamename);
+    else getgamename(null);
+}
+function updateBygamename(gamename: string):void{
+    getgamename(gamename)+setgamename(gamename)+1;
+}
+function getgamename(gamename) {
+    return gamename;
+}
+
+function  setgamename(gamename:string){
+    this.gamename=gamename;
+}
+const[gamename,setgamename]=useState<string>();
+function existsBygamenavsid(gamenavsid: string): boolean {
+    if(!gamenavsid) return true;
+    else return false;
+}
+function existsByGamesNav(gamesnavid:number){
+    if(gamesnavid == 0){getgamesnavid(gamesnavid);}
+    else getgamesnavid(null);
+}
+function updatebygamesnavid(gamesnavid:number){getganesnavid(gamesnavid)+setgamesnavid(gamesnavid)+1;}
+function exitsBygamescnt(gamescnt: number) {
+    if(gamescnt > 0)getgamescnt(gamescnt);
+    else getgamescnt(null);
+}
+function setgamescnt(gamescnt) {
+    this.gamescnt = gamescnt;
+}
+updateBygamescnt(gamescnt)throw exception{
+    getgamescnt(gamescnt)+setgamescnt(gamescnt)+1;
+}
+
+
+
+
+function getgamescnt(gamescnt) {
+        return gamescnt.gamescnt;
+}
+
+{
+    getgamescnt(gamescnt)
+}
+setrendercnt(rendercnt){
+    this.rendercnt=rendercnt;
+}
+updateBygamename(gamename => {string}){this.gamename=gamename;}
+setGamename(gamename:string){
+    this.gamename=gamename;
+}
+updateBynavid(gamesNavId:string){
+    getBynavId(navId)+setnavid(navId)+1;
+}
+setgamesnavid(gamesNavId){
+    this.gamesnavId=gamesnavId;
+}
+const[gamesnavid,setgamesnavid]=useState<number>();
+function updateBygamescnt(gamecnt){
+    getgamecnt(gamecnt)+setgamecnt(gamecnt)+1;
+}
+getrendercnt(rendercnt:number){
+  this.rendercnt=rendercnt;
+}
+const gamesnavid=useMemo(gamesnav);
+const[gamescnt]=useCallback(setgamescnt(gamescnt));//Call backing GamesCnt in  app
+constructor(GamesNav,gameid:string,gameName:string){
+  this.gameid=GamesNav;
+  this.gameName=gameName;
+  this.GamesNav=GamesNav;
+}
+existsByGamesNav(GamesNav:Navigation){
+  if(GamesNav.length!==null)getGamesNav(GamesNav);
+  else getGamesNav(null);
+}
+updateByGamesNav(GamesNav:Navigation){
+  getGamesNav(GamesNav)+setGamesNav(gamenav)+1;
+}
+function setGamesNav(GamesNav:Navigation){this.gamesNav=gamenav;}
+getGamesNav(GamesNav){return GamesNav;}
+setrendercnt(rendercnt:number){this.rendercnt=rendercnt;}//Instantiate rendercnt in Game App.
+constructor(gameid,gamenav,gamename){
+      this.gameid=gameid;
+      this.gamenav=gamenav;
+    this.gamename=gamename;
+}
+ const setgamenav=(gamesNav)=>{this.gamesNav=gamenav;}
+
+const[gamerendercnt,setgamerendercnt]=useState(1);
+const[gamenav,setgamenav]=useCallback(GamesNav);
+export default async  function GamesNav() {
+    setgameid=(gameId)=>{this.gameid=gameid;}
+  setgamename=(gamename)=>{this.gamename=gamename;}//Instantiating GameName
+  const [gameid,setgameid]=useState(true);
+    return (
+       <><div>GamesNav</div><Link href='' className='font-bold-text-2xl'> Game Streaming</Link></>
+
+  )
+}
+  // const [navname,setnavname]=useState(true);
+  // const [navigation,setnavigation]=useState(0);
+  // const [navid,setnavid]=useRef(true);
+  // const gameapp=await getPublishGameList();
+
