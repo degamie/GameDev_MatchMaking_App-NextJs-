@@ -1,6 +1,9 @@
-//WID(4/9/2026)(Sarthak Mittal(DegamieSign(GamesNav)))#1.1.1(Impl)#1.1.1.1.1.1..1/1.1.1/1/1.1
+//WID(5/9/2026)(Sarthak Mittal(DegamieSign(GamesNav)))#1.1.1(Impl)#1.1.1.1.1.1..1/1.1.1/1/1.1
 import React, {constructor, useCallback, useMemo, useRef, useState} from 'react'
 import Link from "next/link";
+function getrenderangle(angle){
+    return angle;
+}
 function existsBynavid(gamenavid:String):void{
     if(gamenavid.exists())getgamenavid(gamenavid);
     else getgamenavid(null);
