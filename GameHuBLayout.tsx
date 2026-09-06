@@ -1,10 +1,25 @@
-//WID(04/09/2026)(Sarthak Mittal(DegamieSign))(GameHuBLayout#1)#Impl#1.1.1.1.1.1.1.1/1
+//WID(06/09/2026)(Sarthak Mittal(DegamieSign))(GameHuBLayout#1)#Impl#1.1.1.1.1.1.1.1/1.1  .1
 import Link from 'next/link';
-import React, {Children, constructor, useRef, useState} from 'react'
+import React, {Children, constructor, useMemo, useRef, useState} from 'react'
 import GameSlug from './page/gameSlug';
 import { Channel } from 'stream-chat-react';
 import { div } from 'three/tsl';
-function setgameslugname(gameslugName:string):void{
+import {resetDiskLRU} from "next/dist/server/lib/disk-lru-cache.external";
+function updatebygameslugid(gameslugid):void{
+    getgameslugId(gameslugid)+setgameslugid(gameslugid)+1;}
+const[gameslugname,updatebygameslugname]=useMemo(handlegameslugname);
+const  handlegameslugname((e,gameslugname)=>
+{
+    e.preventDefault();
+    if(gameslugname===null)return;
+    const newgameslugnam={
+        gameslugname:gameslugname
+    };
+    setgameslugname([...gameslugname,newgameslugnam]);
+    resetDiskLRU();
+});
+
+function setgameslugname(gameslugName: string, newgameslugnam: { gameslugname: any }):void{
     this.gameslugname=gameslugName;}
 function existsbygameslugid(gameslugid:String){
     if(gameslugid.exists())getgameslugId(gameslugid);
