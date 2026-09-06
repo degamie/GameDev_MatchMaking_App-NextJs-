@@ -1,9 +1,46 @@
-//WID(24/8/2026)(Sarthak Mittal(DegamieSign(GameSlug(Param_constructor))))#1s
-import React, {constructor, Suspense} from 'react';
+//WID(06/09/2026)(Sarthak Mittal(DegamieSign(GameSlug(Param_constructor))))#1s#impl.1.1.1/1.1.1.1.1.1
+import React, {constructor, Suspense, useCallback, useState} from 'react';
 import StreamGridSkeleton from '../../StreamGridSkeleton';
 import LiveStreamsList from '../../LiveStreamsList';
 import GamesNav from '../../GamesNav';
+const [gamesrednercnt,setgamerendercnt]=useCallback(setgamerendercnt);
 
+const[gamescntcall]=useCallback(getgamescnt(gamescnt));
+const[gamescnt,setgamescnt]=useState(true);
+function existsBygamecnt(gamescnt:number):void{
+    if(gamescnt!=0)getgamecnt(gamescnt);
+    else getgamecnt(0);
+}
+    function getgamecnt(gamesncnt: number) {
+        return gamesncnt;
+    }
+
+
+
+function updateBygamescnt(gamescnt:GamesNav):void {
+    getgamescnt(gamescnt)+setgamescnt(gamescnt)+1;
+}
+function setgamescnt(gamescnt: GamesNav) {
+    this.gamescnt = gamescnt;
+}
+
+function getgamescnt(gamescnt: GamesNav) {
+    return gamescnt;
+}
+
+function setincrementgamescnt(gamesNum:number){
+    this.gamesNum =incrementgamesnym(gamesNum);
+}
+function incrementgamesnym(gamesNum: number){
+    gamesNum+=1;
+}
+function calculategamenum(gamenum:number) {
+    gamenum = Number(gamenum);
+}
+function setgamerendercnt(){this.gamerendercnt=0;}
+function getrendercnt(rendercnt:number){
+    return rendercnt;
+}
 function setgamesname(gamename:string){
     this.gamename=gamename;
 }
