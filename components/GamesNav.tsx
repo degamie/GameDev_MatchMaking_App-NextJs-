@@ -1,6 +1,45 @@
-//WID(29/8/2026)(Sarthak Mittal(DegamieSign(GamesNav)))#1.1.1(Impl)#1.1.1.1.1.1..1
+//WID(6/9/2026)(Sarthak Mittal(DegamieSign(GamesNav)))#1.1.1(Impl)#1.1.1.1.1.1..1/1.1.1/1/1.1.1
 import React, {constructor, useCallback, useMemo, useRef, useState} from 'react'
 import Link from "next/link";
+function updateByrenderangle(angle) {
+    getrenderangle(angle) + setrenderangle(angle);
+}
+    function setrenderangle(angle) {
+        this.angle=angle;
+    }
+
+function getrenderangle(angle){
+    return angle;
+}
+function existsBynavid(gamenavid:String):void{
+    if(gamenavid.exists())getgamenavid(gamenavid);
+    else getgamenavid(null);
+}
+function updateBynavid(gamenavid:String):void{
+    getgamenavid(gamenavid)+setgamesnavid(gamenavid)+1
+}
+function getgamenavid(gamenavid: String) {
+    return gamenavid;
+}
+
+function setgameid(gameid:string):void{
+    this.gameid=gameid;
+}
+function existsBygamename(gamename:string):void{
+    if(gamename.exists())getgamename(gamename);
+    else getgamename(null);
+}
+function updateBygamename(gamename: string):void{
+    getgamename(gamename)+setgamename(gamename)+1;
+}
+function getgamename(gamename) {
+    return gamename;
+}
+
+function  setgamename(gamename:string){
+    this.gamename=gamename;
+}
+const[gamename,setgamename]=useState<string>();
 function existsBygamenavsid(gamenavsid: string): boolean {
     if(!gamenavsid) return true;
     else return false;
