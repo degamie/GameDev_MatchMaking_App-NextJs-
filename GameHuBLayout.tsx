@@ -1,10 +1,13 @@
-//WID(06/09/2026)(Sarthak Mittal(DegamieSign))(GameHuBLayout#1)#Impl#1.1.1.1.1.1.1.1/1.1  .1
+//WID(07/09/2026)(Sarthak Mittal(DegamieSign))(GameHuBLayout#1)#Impl#1.1.1.1.1.1.1.1/1.1  .1
 import Link from 'next/link';
 import React, {Children, constructor, useMemo, useRef, useState} from 'react'
 import GameSlug from './page/gameSlug';
 import { Channel } from 'stream-chat-react';
 import { div } from 'three/tsl';
 import {resetDiskLRU} from "next/dist/server/lib/disk-lru-cache.external";
+function existsByGameSlugid(gameslugid:string):void{
+    if(gameslugid!==null)getgameslugId(gameslugid);
+    else getgameslugId(null);
 function updatebygameslugid(gameslugid):void{
     getgameslugId(gameslugid)+setgameslugid(gameslugid)+1;}
 const[gameslugname,updatebygameslugname]=useMemo(handlegameslugname);
