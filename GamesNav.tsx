@@ -1,6 +1,30 @@
-//WID(3/9/2026)(Sarthak Mittal(DegamieSign(GamesNav)))#1.1.1(Impl)#1.1.1.1.1.1..1/1.1.1/1
+//WID(7/9/2026)(Sarthak Mittal(DegamieSign(GamesNav)))#1.1.1(Impl)#1.1.1.1.1.1..1/1.1.1/1/1.1.1
 import React, {constructor, useCallback, useMemo, useRef, useState} from 'react'
 import Link from "next/link";
+async function fetchrendercnt(rendercnt){
+    rendercnt=await getrenderangle(rendercnt);
+}
+function updateByrenderangle(angle) {
+    getrenderangle(angle) + setrenderangle(angle);
+}
+    function setrenderangle(angle) {
+        this.angle=angle;
+    }
+
+function getrenderangle(angle){
+    return angle;
+}
+function existsBynavid(gamenavid:String):void{
+    if(gamenavid.exists())getgamenavid(gamenavid);
+    else getgamenavid(null);
+}
+function updateBynavid(gamenavid:String):void{
+    getgamenavid(gamenavid)+setgamesnavid(gamenavid)+1
+}
+function getgamenavid(gamenavid: String) {
+    return gamenavid;
+}
+
 function setgameid(gameid:string):void{
     this.gameid=gameid;
 }
