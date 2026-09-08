@@ -1,6 +1,31 @@
-//WID(5/9/2026)(Sarthak Mittal(DegamieSign(GamesNav)))#1.1.1(Impl)#1.1.1.1.1.1..1/1.1.1/1/1.1
+//WID(8/9/2026)(Sarthak Mittal(DegamieSign(GamesNav)))#1.1.1(Impl)#1.1.1.1.1.1..1/1.1.1/1/1.1.1/1
 import React, {constructor, useCallback, useMemo, useRef, useState} from 'react'
 import Link from "next/link";
+function resetsettings(e){
+    return;
+}
+function handleByrnedernagle(angle,e){
+    e.preventDefault();
+    const newangle={
+        newangle:angle
+    };
+    setrenderangle([angle,newangle]);
+    resetsettings(e);
+}
+function existsByrenderangle(angle) {
+    if (gamename.exists()) getgamename(gamename);
+    else getgamename(null);
+}
+async function fetchrendercnt(rendercnt){
+    rendercnt=await getrenderangle(rendercnt);
+}
+function updateByrenderangle(angle) {
+    getrenderangle(angle) + setrenderangle(angle);
+}
+    function setrenderangle(angle) {
+        this.angle=angle;
+    }
+
 function getrenderangle(angle){
     return angle;
 }
