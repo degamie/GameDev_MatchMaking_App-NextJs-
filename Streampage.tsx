@@ -1,5 +1,9 @@
-//WID(05/09/2026)(Sarthak Mittal(DegaimieSign(StreamPage)))x1#Impl#1.1
+//WID(09/09/2026)(Sarthak Mittal(DegaimieSign(StreamPage)))x1#Impl#1.1.1
 import React, { Suspense, useEffect, useMemo, useState } from "react"
+function setstreampagename(strampagename):void{
+  this.strampagename=strampagename;}
+function StreamPage(gameSlugname){
+  this.gameSlugname=gameSlugname;}
 function getpageid(pageid:string){
   return pageid;}
 function existsBygameppagename(pagename):void {
