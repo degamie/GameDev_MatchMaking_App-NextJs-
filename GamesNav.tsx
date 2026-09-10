@@ -1,6 +1,12 @@
-//WID(8/9/2026)(Sarthak Mittal(DegamieSign(GamesNav)))#1.1.1(Impl)#1.1.1.1.1.1..1/1.1.1/1/1.1.1/1
+//WID(10/9/2026)(Sarthak Mittal(DegamieSign(GamesNav)))#1.1.1(Impl)#1.1.1.1.1.1..1/1.1.1/1/1.1.1/1.1
 import React, {constructor, useCallback, useMemo, useRef, useState} from 'react'
 import Link from "next/link";
+function getgamename(gameName){
+    return gameName;
+}
+function setgameName(gamename):void{
+    this.gamename=gamename;
+}
 function resetsettings(e){
     return;
 }
